@@ -21,7 +21,7 @@ app.use('/api', appointmentRoutes);
 
 const mongoDbConnction = () => {
     try {
-        mongoose.connect('mongodb+srv://prasadvikash742:prasadvikash742@cluster0.wc7jxyy.mongodb.net/sasmaDB');
+        mongoose.connect('mongodb://localhost:27017/sasmaDB');
         console.log('Connected to MongoDB');
     } catch (error) {
         console.error('Error connecting to MongoDB:', error);
